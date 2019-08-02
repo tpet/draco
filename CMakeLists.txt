@@ -136,6 +136,8 @@ if(WIN32 AND BUILD_SHARED_LIBS)
   set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 endif()
 
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared library.")
+
 if(ENABLE_EXTRA_SPEED)
   if(MSVC)
     # Maximum optimization in Release mode.
